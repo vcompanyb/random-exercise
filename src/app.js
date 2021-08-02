@@ -46,6 +46,7 @@ function getSeparatedDoneAndUndoneTodos(todos) {
 
 function writeNameAndTimeTodos(todos) {
   for (let i = 0; i < todos.length; i++) {
-    console.log(``);
+    let todo = todos[i];
+    console.log(`${todo.value}:${todo.estimatedTimeMins}`);
   }
 }
